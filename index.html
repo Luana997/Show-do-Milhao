@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Show do Milhão</title>
+    <link type="text/css" rel="stylesheet" href="css/esqueleto.css" />
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="js/comportamentos.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>
+                <img src="img/logo.jpg.jpg" alt="Logo Silvio Santos" class="logo-centralizada">
+            </legend>
+
+            <!-- Botão para iniciar o jogo -->
+            <section id="comecar">
+                <button id="btn-comecar">Começar a jogar</button>
+            </section>
+
+            <section id="lista-perguntas">
+                <!-- 1ª Rodada (Perguntas Fáceis) -->
+                <!-- Pergunta de R$1000 -->
+                <div id="pergunta1000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta1000">
+                        <p>Capixaba, é a denominação de quem nasce em qual estado brasileiro?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta1000" value="1" />
+                                    Rio Grande do Norte
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta1000" value="2" />
+                                    Santa Catarina
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta1000" value="3" />
+                                    Espírito Santo
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta1000" value="4" />
+                                    Paraíba
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 1000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$2000 -->
+                <div id="pergunta2000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta2000">
+                        <p>De quem é a frase "Penso, logo existo?"</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta2000" value="1" />
+                                    Platão
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta2000" value="2" />
+                                    Júlio Verne
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta2000" value="3" />
+                                    Aristóteles
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta2000" value="4" />
+                                    René Descartes
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 2000</button>
+                    </form>
+                </div>
+
+                 <!-- Pergunta de R$3000 -->
+                <div id="pergunta3000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta3000">
+                        <p>Em que estado brasileiro nasceu a apresentadora Xuxa?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta3000" value="1" />
+                                    Rio de Janeiro
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta3000" value="2" />
+                                    Rio Grande do Sul
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta3000" value="3" />
+                                    Santa Catarina
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta3000" value="4" />
+                                    Goiás
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 3000</button>
+                    </form>
+                </div>
+
+                 <!-- Pergunta de R$4000 -->
+                <div id="pergunta4000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta4000">
+                        <p>Qual é a cor que se associa com os grupos ecológicos?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta4000" value="1" />
+                                    Preta
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta4000" value="2" />
+                                    Vermelha
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta4000" value="3" />
+                                    Azul
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta4000" value="4" />
+                                    Verde
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 4000</button>
+                    </form>
+                </div>
+
+                 <!-- Pergunta de R$5000 -->
+                <div id="pergunta5000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta5000">
+                        <p>Qual é o nome do cachorro medroso do Salsicha, 
+                            dos desenhos animados?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta5000" value="1" />
+                                    Floquinho
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta5000" value="2" />
+                                    Rin Tin Tin
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta5000" value="3" />
+                                    Lassie
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta5000" value="4" />
+                                    Scooby-Doo
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 5000</button>
+                    </form>
+                </div>
+
+                <!-- 1ª Rodada (Perguntas Médias) -->
+                 <!-- Pergunta de R$10000 -->
+                <div id="pergunta10000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta10000">
+                        <p>A cidade de Pompéia, que foi soterrada por um vulcão
+                             fica em qual desses países</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta10000" value="1" />
+                                    Japão
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta10000" value="2" />
+                                    México
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta10000" value="3" />
+                                    Itália
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta10000" value="4" />
+                                    Estados Unidos
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 10000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$20000 -->
+                <div id="pergunta20000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta20000">
+                        <p>O que é um oboé?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta20000" value="1" />
+                                    Vulcão
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta20000" value="2" />
+                                    Comida
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta20000" value="3" />
+                                    Instrumento Musical
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta20000" value="4" />
+                                    Tribo Indigena
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 20000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$30000 -->
+                <div id="pergunta30000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta30000">
+                        <p>Como eram chamados os pilotos suicidas 
+                            da Segunda Guerra?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta30000" value="1" />
+                                    kamikases
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta30000" value="2" />
+                                    Sashimis
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta30000" value="3" />
+                                    Haraquiris
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta30000" value="4" />
+                                    Sumôs
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 30000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$40000 -->
+                <div id="pergunta40000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta40000">
+                        <p>De quantos em quantos anos aparece o cometa Halley?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta40000" value="1" />
+                                    57 Anos
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta40000" value="2" />
+                                    67 Anos
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta40000" value="3" />
+                                    76 Anos
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta40000" value="4" />
+                                    79 Anos
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 40000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$50000 -->
+                <div id="pergunta50000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta50000">
+                        <p>Segundo a crença popular, a mula-sem-cabeça
+                             é mulher de quem?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta50000" value="1" />
+                                    Do Coroinha
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta50000" value="2" />
+                                    Do padre
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta50000" value="3" />
+                                    Do Sacristão
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta50000" value="4" />
+                                    Do Bispo
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 50000</button>
+                    </form>
+                </div>
+                
+                <!-- 3ª Rodada (Perguntas Difíceis) -->
+                 <!-- Pergunta de R$100000 -->
+                <div id="pergunta100000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta100000">
+                        <p>Em qual espécie o macho choca os ovos e
+                             a fêmea procura alimento?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta100000" value="1" />
+                                    Andorinha
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta100000" value="2" />
+                                    Pato Selvagem
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta100000" value="3" />
+                                    Pinquim
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta100000" value="4" />
+                                    Marreco
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 100000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$200000 -->
+                <div id="pergunta200000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta200000">
+                        <p>Qual a ciência que estuda a distribuição dos animais?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta200000" value="1" />
+                                    Zooterapia
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta200000" value="2" />
+                                    Zoogeografia
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta200000" value="3" />
+                                    Zodíaco
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta200000" value="4" />
+                                    Zometria
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 200000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$300000 -->
+                <div id="pergunta300000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta300000">
+                        <p>O confucionismo é uma filosofia de qual nacionalidade?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta300000" value="1" />
+                                    Indiana
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta300000" value="2" />
+                                    Japonesa
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta300000" value="3" />
+                                    Chinesa
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta300000" value="4" />
+                                    Coreana
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 300000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$400000 -->
+                <div id="pergunta400000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta400000">
+                        <p>A que país pertence a ilha de Terra Nova?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta400000" value="1" />
+                                    Estados Unidos
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta400000" value="2" />
+                                    Dinamarca
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta400000" value="3" />
+                                    Canadá
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta400000" value="4" />
+                                    França
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 400000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta de R$500000 -->
+                <div id="pergunta500000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta500000">
+                        <p>Onde nasceu Van Gogh, o grande pintor impressionista?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta500000" value="1" />
+                                    Polonia 
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta500000" value="2" />
+                                    França
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta500000" value="3" />
+                                    Italia
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta500000" value="4" />
+                                    Holanda
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 500000</button>
+                    </form>
+                </div>
+
+                <!-- Pergunta Final -->
+                 <!-- Pergunta de R$1000000 -->
+                <div id="pergunta1000000" class="pergunta" style="display: none;">
+                    <form id="form-pergunta1000000">
+                        <p>Em que país você pode gastar rublos?</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span>1</span>
+                                    <input type="radio" name="pergunta1000000" value="1" />
+                                    Holanda
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>2</span>
+                                    <input type="radio" name="pergunta1000000" value="2" />
+                                    Russia
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>3</span>
+                                    <input type="radio" name="pergunta1000000" value="3" />
+                                    Espanha
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span>4</span>
+                                    <input type="radio" name="pergunta1000000" value="4" />
+                                    Africa do Sul
+                                </label>
+                            </li>
+                        </ul>
+                        <button type="submit">Valendo 1000000</button>
+                    </form>
+                </div>
+                
+            </section>
+        </fieldset>
+    </main>
+
+    <!-- Áudio para tocar efeitos sonoros -->
+    <audio id="silvio-santos"></audio>
+</body>
+</html>

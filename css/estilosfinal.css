@@ -1,0 +1,64 @@
+body {
+            background-color: #000033;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .confete {
+            font-size: 40px;
+            margin: 20px 0;
+            color: gold;
+        }
+
+        .mensagem {
+            background: #001144;
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid #FFD700;
+            box-shadow: 0 0 20px #FFD700;
+        }
+
+        .mensagem h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .botao {
+            margin-top: 30px;
+        }
+
+        .botao button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: gold;
+            color: #000033;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .botao button:hover {
+            background-color: #FFD700;
+        }
+
