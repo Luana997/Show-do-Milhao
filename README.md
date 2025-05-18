@@ -1,5 +1,5 @@
 Olá, seja bem-vindo ao Show do Milhão.
-Esse programa é um cópia do show do milhão do Silvio Santos, com 
+Esse programa é uma cópia do show do milhão do Silvio Santos, com 
 9 perguntas, dividas entre faceis, médias e dificeis tiradas do
 livro dado pelo Professor Thiago da Fatec Jahu.Para escolher uma
 resposta, deve-se cliclar em uma alternativa (1,2,3 e 4) e apertar
